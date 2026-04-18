@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarkovKey — Prédiction de texte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- ── SIDEBAR ─────────────────────────────── -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-mark">Mk</div>
+        <div class="logo-text">
+          <span class="logo-title">MarkovKey</span>
+          <span class="logo-sub">Prédiction de saisie</span>
+        </div>
+      </div>
+
+      <div id="stats-panel" class="stats-panel"></div>
+    </aside>
+
+    <!-- ── MAIN ────────────────────────────────── -->
+    <main class="main">
+      <header class="top-bar">
+        <h1 class="page-title">Zone de saisie intelligente</h1>
+        <p class="page-sub">Tapez du texte — les suggestions apparaissent en temps réel</p>
+      </header>
+
+      <div id="app" class="app-area"></div>
+    </main>
+
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
